@@ -18,7 +18,6 @@ Backend systems • Hosting infrastructure • Web applications • Mobile apps 
 ### Contact
 
 Telegram: `@KirixDev`
-- 📫 How to reach me ...
 
 <!---
 Kiril-Donec/Kiril-Donec is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
