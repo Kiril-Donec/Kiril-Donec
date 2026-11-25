@@ -17,6 +17,14 @@
 
 ---
 
+### 🚀 My project
+
+<p align="center">
+  <a href="https://mhos.fun"><img width="100%" src="./assets/momenthost.svg" alt="MomentHost — hosting for Minecraft servers, bots and websites" /></a>
+</p>
+
+---
+
 ### 💻 Languages
 
 - 📱 **Kotlin** — Android apps and Jetpack Compose

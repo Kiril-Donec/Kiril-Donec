@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 900 360" width="900" height="360">
+  <defs>
+    <clipPath id="r"><rect width="900" height="360" rx="20"/></clipPath>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050907"/><stop offset="1" stop-color="#071a14"/>
+    </linearGradient>
+    <linearGradient id="ttl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#34d399" stop-opacity=".35"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#34d399" opacity=".12"/></pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <style>
+    .t{font:800 44px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}
+    .s{font:500 18px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#9fb3aa}
+    .m{font:500 15px 'JetBrains Mono',Consolas,monospace}
+    .pill{font:600 15px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#d1fae5}
+    .ping{animation:ping 2s ease-out infinite;transform-origin:center;transform-box:fill-box}
+    @keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3);opacity:0}}
+    .rack{animation:led 1.4s steps(1) infinite}
+    .r2{animation-delay:.35s}.r3{animation-delay:.7s}.r4{animation-delay:1.05s}
+    @keyframes led{0%,60%{opacity:1}61%,100%{opacity:.25}}
+    .bar{animation:fill 3s cubic-bezier(.2,.8,.2,1) forwards;transform-origin:left;transform-box:fill-box;transform:scaleX(0)}
+    @keyframes fill{to{transform:scaleX(1)}}
+    .orb{animation:fl 9s ease-in-out infinite}
+    @keyframes fl{50%{transform:translate(-40px,20px)}}
+    .in{animation:up 1s cubic-bezier(.2,.8,.2,1) both}
+    .d1{animation-delay:.2s}.d2{animation-delay:.4s}.d3{animation-delay:.6s}.d4{animation-delay:.8s}
+    @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  </style>
+  <g clip-path="url(#r)">
+    <rect width="900" height="360" fill="url(#bg)"/>
+    <rect width="900" height="360" fill="url(#dots)"/>
+    <circle class="orb" cx="760" cy="120" r="240" fill="url(#glow)"/>
+
+    <g class="in">
+      <rect x="40" y="40" width="64" height="64" rx="16" fill="#0b2a20" stroke="#34d399" stroke-opacity=".5"/>
+      <path d="M56 88V58l16 18 16-18v30" fill="none" stroke="url(#ttl)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="124" y="84" class="t" fill="url(#ttl)">MomentHost</text>
+    </g>
+    <text x="40" y="142" class="s in d1">Hosting for Minecraft servers, bots and websites</text>
+
+    <g class="in d2">
+      <rect x="40" y="170" width="200" height="40" rx="20" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".45"/>
+      <text x="140" y="196" text-anchor="middle" class="pill">⛏ Minecraft servers</text>
+      <rect x="252" y="170" width="214" height="40" rx="20" fill="#00d4ff" fill-opacity=".1" stroke="#00d4ff" stroke-opacity=".45"/>
+      <text x="359" y="196" text-anchor="middle" class="pill">🤖 Python / Node.js bots</text>
+      <rect x="40" y="222" width="230" height="40" rx="20" fill="#7f8cff" fill-opacity=".12" stroke="#7f8cff" stroke-opacity=".45"/>
+      <text x="155" y="248" text-anchor="middle" class="pill">🌐 Free HTML websites</text>
+      <rect x="282" y="222" width="184" height="40" rx="20" fill="#b16cff" fill-opacity=".12" stroke="#b16cff" stroke-opacity=".45"/>
+      <text x="374" y="248" text-anchor="middle" class="pill">🗂 One account panel</text>
+    </g>
+
+    <g class="in d3">
+      <circle cx="52" cy="308" r="6" fill="#34d399"/>
+      <circle class="ping" cx="52" cy="308" r="6" fill="#34d399"/>
+      <text x="68" y="313" class="m" fill="#34d399">status: online</text>
+      <text x="210" y="313" class="m" fill="#5c7a6e">→</text>
+      <text x="236" y="313" class="m" fill="#00d4ff">mhos.fun</text>
+    </g>
+
+    <g class="in d4" transform="translate(560 70)">
+      <rect width="290" height="230" rx="14" fill="#08130f" stroke="#34d399" stroke-opacity=".3"/>
+      <g transform="translate(18 18)">
+        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
+        <circle class="rack" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
+        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="96" height="8" rx="4" fill="#34d399"/>
+        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-1</text>
+      </g>
+      <g transform="translate(18 66)">
+        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
+        <circle class="rack r2" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
+        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="70" height="8" rx="4" fill="#00d4ff" style="animation-delay:.3s"/>
+        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-2</text>
+      </g>
+      <g transform="translate(18 114)">
+        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
+        <circle class="rack r3" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
+        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="108" height="8" rx="4" fill="#7f8cff" style="animation-delay:.6s"/>
+        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-3</text>
+      </g>
+      <g transform="translate(18 162)">
+        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
+        <circle class="rack r4" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
+        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="84" height="8" rx="4" fill="#b16cff" style="animation-delay:.9s"/>
+        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-4</text>
+      </g>
+    </g>
+  </g>
+  <rect x="1" y="1" width="898" height="358" rx="19" fill="none" stroke="url(#edge)" stroke-opacity=".55" stroke-width="2"/>
+</svg>
