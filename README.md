@@ -34,19 +34,14 @@ I'm interested in building and maintaining real-world software and infrastructur
 
 ---
 
-### 🏆 Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Kiril-Donec&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=6" />
-</p>
-
----
-
 ### 📊 GitHub stats
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Kiril-Donec&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&card_width=495" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kiril-Donec&layout=compact&theme=tokyonight&hide_border=true&hide=c,c%23&langs_count=6&card_width=495" />
+  <img width="98%" src="https://github-readme-stats.vercel.app/api?username=Kiril-Donec&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&card_width=495" />
+</p>
+
+<p align="center">
+  <img width="98%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kiril-Donec&layout=compact&theme=tokyonight&hide_border=true&hide=c,c%23,c%2B%2B,bitbake&langs_count=6&card_width=495" />
 </p>
 
 <p align="center">
@@ -62,10 +57,7 @@ I'm interested in building and maintaining real-world software and infrastructur
 ### 🐍 Contribution snake
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kiril-Donec/Kiril-Donec/output/github-snake-dark.svg" />
-    <img width="98%" src="https://raw.githubusercontent.com/Kiril-Donec/Kiril-Donec/output/github-snake.svg" />
-  </picture>
+  <img width="98%" src="https://raw.githubusercontent.com/Kiril-Donec/Kiril-Donec/output/github-snake-dark.svg?v=2" />
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D4FF,100:7F00FF&height=100&section=footer" width="100%"/>
