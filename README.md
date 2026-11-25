@@ -1,9 +1,5 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F00FF,100:00D4FF&height=180&section=header&text=Hi,%20I'm%20Kiril%20👋&fontSize=40&fontColor=ffffff&animation=fadeIn" width="100%"/>
-
 <p align="center">
-  <a href="https://github.com/Kiril-Donec">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=520&lines=Independent+Developer;Hosting+Founder;Linux+%2F+Infrastructure+Enthusiast;Embedded+Systems+Explorer" alt="Typing SVG" />
-  </a>
+  <img width="100%" src="./assets/header.svg" alt="Kiril Donets" />
 </p>
 
 <p align="center">
@@ -15,14 +11,9 @@
 
 ### 🧑‍💻 About me
 
-I'm interested in building and maintaining real-world software and infrastructure projects.
-
-- 🖥️ Working with servers, hosting platforms, Linux and self-hosted services
-- 🌐 Interested in networking, APIs, backend architecture and infrastructure
-- 📱 Exploring Android and modern application development
-- 🛠️ Learning system administration, DevOps, databases, virtualization and web security
-- ⚙️ Experimenting with embedded systems, ESP32 and single-board computers
-- 🚀 Building my own projects and improving them step by step
+<p align="center">
+  <img width="100%" src="./assets/terminal.svg" alt="About me" />
+</p>
 
 ---
 
