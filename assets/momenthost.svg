@@ -1,95 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 900 360" width="900" height="360">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 900 380" width="900" height="380">
   <defs>
-    <clipPath id="r"><rect width="900" height="360" rx="20"/></clipPath>
+    <clipPath id="r"><rect width="900" height="380" rx="22"/></clipPath>
+    <clipPath id="lg"><rect x="48" y="90" width="200" height="200" rx="44"/></clipPath>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#050907"/><stop offset="1" stop-color="#071a14"/>
+      <stop offset="0" stop-color="#0a1611"/><stop offset=".55" stop-color="#050907"/><stop offset="1" stop-color="#0c1f17"/>
     </linearGradient>
-    <linearGradient id="ttl" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#00d4ff"/>
+    <linearGradient id="ttl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dffc0"/><stop offset="1" stop-color="#2fd282"/>
     </linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#00d4ff"/>
+      <stop offset="0" stop-color="#49fa9f" stop-opacity=".7"/><stop offset=".5" stop-color="#49fa9f" stop-opacity=".1"/><stop offset="1" stop-color="#49fa9f" stop-opacity=".6"/>
     </linearGradient>
-    <radialGradient id="glow"><stop offset="0" stop-color="#34d399" stop-opacity=".35"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
-    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#34d399" opacity=".12"/></pattern>
-    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#9dffd0" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="halo"><stop offset="0" stop-color="#49fa9f" stop-opacity=".55"/><stop offset=".6" stop-color="#49fa9f" stop-opacity=".12"/><stop offset="1" stop-color="#49fa9f" stop-opacity="0"/></radialGradient>
+    <radialGradient id="amb"><stop offset="0" stop-color="#1f6b47" stop-opacity=".45"/><stop offset="1" stop-color="#1f6b47" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#49fa9f" stroke-opacity=".06"/></pattern>
   </defs>
   <style>
-    .t{font:800 44px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}
-    .s{font:500 18px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#9fb3aa}
-    .m{font:500 15px 'JetBrains Mono',Consolas,monospace}
-    .pill{font:600 15px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#d1fae5}
-    .ping{animation:ping 2s ease-out infinite;transform-origin:center;transform-box:fill-box}
-    @keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3);opacity:0}}
-    .rack{animation:led 1.4s steps(1) infinite}
-    .r2{animation-delay:.35s}.r3{animation-delay:.7s}.r4{animation-delay:1.05s}
-    @keyframes led{0%,60%{opacity:1}61%,100%{opacity:.25}}
-    .bar{animation:fill 3s cubic-bezier(.2,.8,.2,1) forwards;transform-origin:left;transform-box:fill-box;transform:scaleX(0)}
-    @keyframes fill{to{transform:scaleX(1)}}
-    .orb{animation:fl 9s ease-in-out infinite}
-    @keyframes fl{50%{transform:translate(-40px,20px)}}
-    .in{animation:up 1s cubic-bezier(.2,.8,.2,1) both}
-    .d1{animation-delay:.2s}.d2{animation-delay:.4s}.d3{animation-delay:.6s}.d4{animation-delay:.8s}
-    @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    .t{font:800 54px 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif;letter-spacing:.5px}
+    .s{font:500 19px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#9cc2b0}
+    .f{font:600 17px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#e6fff2}
+    .fm{font:400 14px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#6f9483}
+    .b{font:700 17px 'JetBrains Mono',Consolas,monospace;fill:#05140d}
+    .halo{animation:breathe 3.2s ease-in-out infinite}
+    @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+    .ring{animation:ringp 3.2s ease-out infinite;opacity:0}
+    @keyframes ringp{0%{opacity:.7;stroke-width:3}100%{opacity:0;stroke-width:0}}
+    .ring2{animation-delay:1.6s}
+    .sw{animation:sw 4.5s ease-in-out infinite}
+    @keyframes sw{0%{transform:translateX(-500px)}60%,100%{transform:translateX(1100px)}}
+    .bs{animation:bs 3s ease-in-out infinite}
+    @keyframes bs{0%{transform:translateX(-120px)}70%,100%{transform:translateX(260px)}}
+    .p{animation:rise 7s linear infinite;opacity:0}
+    @keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-300px);opacity:0}}
+    .fade{animation:fade 1s ease-out both}
+    .d1{animation-delay:.25s}.d2{animation-delay:.5s}.d3{animation-delay:.75s}.d4{animation-delay:1s}
+    @keyframes fade{from{opacity:0}to{opacity:1}}
+    .dot{animation:blink 2s ease-in-out infinite}
+    @keyframes blink{50%{opacity:.3}}
   </style>
   <g clip-path="url(#r)">
-    <rect width="900" height="360" fill="url(#bg)"/>
-    <rect width="900" height="360" fill="url(#dots)"/>
-    <circle class="orb" cx="760" cy="120" r="240" fill="url(#glow)"/>
+    <rect width="900" height="380" fill="url(#bg)"/>
+    <rect width="900" height="380" fill="url(#grid)"/>
+    <circle cx="150" cy="190" r="300" fill="url(#amb)"/>
+    <circle cx="820" cy="40" r="220" fill="url(#amb)"/>
 
-    <g class="in">
-      <rect x="40" y="40" width="64" height="64" rx="16" fill="#0b2a20" stroke="#34d399" stroke-opacity=".5"/>
-      <path d="M56 88V58l16 18 16-18v30" fill="none" stroke="url(#ttl)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="124" y="84" class="t" fill="url(#ttl)">MomentHost</text>
-    </g>
-    <text x="40" y="142" class="s in d1">Hosting for Minecraft servers, bots and websites</text>
-
-    <g class="in d2">
-      <rect x="40" y="170" width="200" height="40" rx="20" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".45"/>
-      <text x="140" y="196" text-anchor="middle" class="pill">⛏ Minecraft servers</text>
-      <rect x="252" y="170" width="214" height="40" rx="20" fill="#00d4ff" fill-opacity=".1" stroke="#00d4ff" stroke-opacity=".45"/>
-      <text x="359" y="196" text-anchor="middle" class="pill">🤖 Python / Node.js bots</text>
-      <rect x="40" y="222" width="230" height="40" rx="20" fill="#7f8cff" fill-opacity=".12" stroke="#7f8cff" stroke-opacity=".45"/>
-      <text x="155" y="248" text-anchor="middle" class="pill">🌐 Free HTML websites</text>
-      <rect x="282" y="222" width="184" height="40" rx="20" fill="#b16cff" fill-opacity=".12" stroke="#b16cff" stroke-opacity=".45"/>
-      <text x="374" y="248" text-anchor="middle" class="pill">🗂 One account panel</text>
+    <g fill="#49fa9f">
+      <circle class="p" cx="80" cy="400" r="2"/>
+      <circle class="p" cx="230" cy="400" r="1.5" style="animation-delay:1.2s"/>
+      <circle class="p" cx="340" cy="400" r="2" style="animation-delay:2.6s"/>
+      <circle class="p" cx="520" cy="400" r="1.5" style="animation-delay:.6s"/>
+      <circle class="p" cx="640" cy="400" r="2.2" style="animation-delay:3.4s"/>
+      <circle class="p" cx="760" cy="400" r="1.6" style="animation-delay:1.9s"/>
+      <circle class="p" cx="860" cy="400" r="2" style="animation-delay:4.4s"/>
+      <circle class="p" cx="160" cy="400" r="1.4" style="animation-delay:5.2s"/>
     </g>
 
-    <g class="in d3">
-      <circle cx="52" cy="308" r="6" fill="#34d399"/>
-      <circle class="ping" cx="52" cy="308" r="6" fill="#34d399"/>
-      <text x="68" y="313" class="m" fill="#34d399">status: online</text>
-      <text x="210" y="313" class="m" fill="#5c7a6e">→</text>
-      <text x="236" y="313" class="m" fill="#00d4ff">mhos.fun</text>
+    <circle class="halo" cx="148" cy="190" r="150" fill="url(#halo)"/>
+    <rect class="ring" x="48" y="90" width="200" height="200" rx="44" fill="none" stroke="#49fa9f"/>
+    <rect class="ring ring2" x="48" y="90" width="200" height="200" rx="44" fill="none" stroke="#49fa9f"/>
+    <image x="48" y="90" width="200" height="200" clip-path="url(#lg)" xlink:href="data:image/jpeg;base64,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" href="data:image/jpeg;base64,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"/>
+    <rect x="48.5" y="90.5" width="199" height="199" rx="44" fill="none" stroke="#49fa9f" stroke-opacity=".45"/>
+
+    <g class="fade">
+      <text x="300" y="118" class="t" fill="url(#ttl)">MomentHost</text>
+    </g>
+    <text x="302" y="152" class="s fade d1">Hosting for Minecraft servers, bots and websites</text>
+
+    <g class="fade d2">
+      <rect x="300" y="178" width="250" height="62" rx="14" fill="#49fa9f" fill-opacity=".07" stroke="#49fa9f" stroke-opacity=".25"/>
+      <text x="318" y="205" class="f">⛏  Minecraft servers</text>
+      <text x="318" y="227" class="fm">your own game server</text>
+      <rect x="562" y="178" width="300" height="62" rx="14" fill="#49fa9f" fill-opacity=".07" stroke="#49fa9f" stroke-opacity=".25"/>
+      <text x="580" y="205" class="f">🤖  Bots</text>
+      <text x="580" y="227" class="fm">Python · Node.js</text>
+    </g>
+    <g class="fade d3">
+      <rect x="300" y="250" width="250" height="62" rx="14" fill="#49fa9f" fill-opacity=".07" stroke="#49fa9f" stroke-opacity=".25"/>
+      <text x="318" y="277" class="f">🌐  Websites</text>
+      <text x="318" y="299" class="fm">free HTML hosting</text>
+      <rect x="562" y="250" width="300" height="62" rx="14" fill="#49fa9f" fill-opacity=".07" stroke="#49fa9f" stroke-opacity=".25"/>
+      <text x="580" y="277" class="f">🗂  One panel</text>
+      <text x="580" y="299" class="fm">files and all services in one account</text>
     </g>
 
-    <g class="in d4" transform="translate(560 70)">
-      <rect width="290" height="230" rx="14" fill="#08130f" stroke="#34d399" stroke-opacity=".3"/>
-      <g transform="translate(18 18)">
-        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
-        <circle class="rack" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
-        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="96" height="8" rx="4" fill="#34d399"/>
-        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-1</text>
+    <g class="fade d4">
+      <circle class="dot" cx="306" cy="343" r="5" fill="#49fa9f"/>
+      <text x="320" y="348" class="fm" style="fill:#7fd9ad">online</text>
+      <clipPath id="btn"><rect x="702" y="326" width="160" height="38" rx="19"/></clipPath>
+      <g clip-path="url(#btn)">
+        <rect x="702" y="326" width="160" height="38" rx="19" fill="#49fa9f"/>
+        <rect class="bs" x="702" y="326" width="70" height="38" fill="url(#sweep)" style="opacity:1"/>
       </g>
-      <g transform="translate(18 66)">
-        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
-        <circle class="rack r2" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
-        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="70" height="8" rx="4" fill="#00d4ff" style="animation-delay:.3s"/>
-        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-2</text>
-      </g>
-      <g transform="translate(18 114)">
-        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
-        <circle class="rack r3" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
-        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="108" height="8" rx="4" fill="#7f8cff" style="animation-delay:.6s"/>
-        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-3</text>
-      </g>
-      <g transform="translate(18 162)">
-        <rect width="254" height="38" rx="8" fill="#0d1f19"/>
-        <circle class="rack r4" cx="18" cy="19" r="4" fill="#34d399"/><circle cx="34" cy="19" r="4" fill="#00d4ff" opacity=".6"/>
-        <rect x="56" y="15" width="120" height="8" rx="4" fill="#163a2e"/><rect class="bar" x="56" y="15" width="84" height="8" rx="4" fill="#b16cff" style="animation-delay:.9s"/>
-        <text x="190" y="24" class="m" style="font-size:12px" fill="#5c7a6e">node-4</text>
-      </g>
+      <text x="782" y="351" text-anchor="middle" class="b">mhos.fun →</text>
     </g>
+
+    <rect class="sw" x="0" y="0" width="260" height="380" fill="url(#sweep)" opacity=".5"/>
   </g>
-  <rect x="1" y="1" width="898" height="358" rx="19" fill="none" stroke="url(#edge)" stroke-opacity=".55" stroke-width="2"/>
+  <rect x="1" y="1" width="898" height="378" rx="21" fill="none" stroke="url(#edge)" stroke-width="2"/>
 </svg>
