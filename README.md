@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/Kiril-Donec">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=520&lines=Backend+and+infrastructure;Servers%2C+hosting+and+self-hosting;Android+%7C+ESP32+%7C+Single-board+computers" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=520&lines=Independent+Developer;Hosting+Founder;Linux+%2F+Infrastructure+Enthusiast;Embedded+Systems+Explorer" alt="Typing SVG" />
   </a>
 </p>
 
@@ -26,10 +26,32 @@ I'm interested in building and maintaining real-world software and infrastructur
 
 ---
 
+### 💻 Languages
+
+- 📱 **Kotlin** — Android apps and Jetpack Compose
+- 🍎 **Swift** — exploring native iOS development
+- 🌐 **TypeScript / JavaScript** — web interfaces, React, Node.js
+- 🐘 **PHP** — Laravel-based hosting and billing systems
+- 🐍 **Python** — scripting and dev tools
+- 🐧 **Bash** — Linux administration and server automation
+- ⚙️ **C / ARM64 Assembly** — bootloaders and low-level experiments
+- 🔌 **C++** — ESP32 and microcontrollers
+- 🗄️ **SQL**, 🎨 **HTML & CSS**
+
+---
+
 ### 🛠 Tech stack
 
+- 🖥️ **Infrastructure** — Linux, Debian, Docker, VPS, Pterodactyl, Paymenter
+- 🌍 **Web** — React, Laravel, Tailwind CSS, Inertia.js
+- 💾 **Databases** — PostgreSQL, Redis
+- 📱 **Mobile** — Android Studio, Jetpack Compose, Gradle, iOS
+- 🔧 **Embedded** — ESP32, Arduino, Orange Pi, ARM64
+- 📡 **Networking** — TCP/IP, DNS, DHCP, Cloudflare
+- 🎨 **Design** — Inkscape, SVG, UI/UX
+
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=linux,debian,bash,docker,nginx,cloudflare,nodejs,python,js,ts,html,css,kotlin,androidstudio,lua,arduino,raspberrypi,git,github,vscode&perline=10" />
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=kotlin,swift,ts,js,php,py,bash,c,cpp,html,css,linux,debian,docker,react,laravel,tailwind,postgres,redis,androidstudio,gradle,arduino,git,github,cloudflare,svg,nodejs,npm&perline=7" /></a>
 </p>
 
 ---
