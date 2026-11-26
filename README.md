@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **Disclaimer:** I am no longer involved in any unofficial GTA porting projects. I do not support or endorse unofficial GTA ports, unauthorized distribution, or the use of leaked proprietary materials. I respect Rockstar Games’ intellectual property rights.
+
 <p align="center">
   <img width="100%" src="./assets/header.svg" alt="Kiril Donets" />
 </p>
